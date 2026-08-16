@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url("/assets/fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url("/assets/fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url("/assets/fonts/WorkSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url("/assets/fonts/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url("/assets/fonts/WorkSans-SemiBold.ttf") format("truetype");
+}
+
+:root {
+    /* =========================
+     FONT FAMILY
+  ========================= */
+
+    --font-primary: "work-sans", sans-serif;
+
+    /* =========================
+     FONT SIZE
+  ========================= */
+
+    --fs-xs: 10px;
+    --fs-sm: 12px;
+    --fs-md: 14px;
+    --fs-base: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-2xl: 24px;
+    --fs-3xl: 32px;
+    --fs-4xl: 40px;
+    --fs-5xl: 48px;
+
+    /* =========================
+     FONT WEIGHT
+  ========================= */
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    /* =========================
+     COLORS
+  ========================= */
+
+    --color-primary: #a238ff;
+    --color-primary-dark: #8b21e8;
+    --color-primary-light: #f2ddff;
+
+    --color-dark: #14243a;
+    --color-dark-2: #26364d;
+
+    --color-text: #25364d;
+    --color-text-light: #777f8c;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-bg: #ffffff;
+    --color-bg-light: #f5f6f8;
+    --color-bg-gray: #eef0f3;
+
+    --color-border: #e8e8ec;
+
+    /* =========================
+     SPACING
+  ========================= */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+
+    /* =========================
+     BORDER RADIUS
+  ========================= */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 20px;
+    --radius-round: 50%;
+
+    /* =========================
+     SHADOW
+  ========================= */
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.1);
+
+    --shadow-primary: 0 8px 25px rgba(162, 56, 255, 0.25);
+
+    /* =========================
+     CONTAINER
+  ========================= */
+
+    --container-width: 1100px;
+    --container-padding: 24px;
+
+    /* =========================
+     BUTTON
+  ========================= */
+
+    --btn-height: 42px;
+    --btn-padding-x: 24px;
+    --btn-radius: 4px;
+
+    /* =========================
+     TRANSITION
+  ========================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* =========================
+     Z-INDEX
+  ========================= */
+
+    --z-header: 1000;
+    --z-modal: 2000;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    font-weight: var(--font-width-medium);
+}
+
+.container{
+    padding: 0 300 0 300;
+}
