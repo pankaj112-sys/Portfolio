@@ -33,13 +33,10 @@
     /* =========================
      FONT FAMILY
   ========================= */
-
     --font-primary: "work-sans", sans-serif;
-
     /* =========================
      FONT SIZE
   ========================= */
-
     --fs-xs: 10px;
     --fs-sm: 12px;
     --fs-md: 14px;
@@ -50,24 +47,21 @@
     --fs-3xl: 32px;
     --fs-4xl: 40px;
     --fs-5xl: 48px;
-
     /* =========================
      FONT WEIGHT
   ========================= */
-
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-semibold: 600;
     --fw-bold: 700;
     --fw-extrabold: 800;
-
     /* =========================
      COLORS
   ========================= */
-
-    --color-primary: #a238ff;
+    --color-primary: #A53DFF;
     --color-primary-dark: #8b21e8;
+    
     --color-primary-light: #f2ddff;
 
     --color-dark: #14243a;
@@ -75,20 +69,15 @@
 
     --color-text: #25364d;
     --color-text-light: #777f8c;
-
     --color-white: #ffffff;
     --color-black: #000000;
-
     --color-bg: #ffffff;
     --color-bg-light: #f5f6f8;
     --color-bg-gray: #eef0f3;
-
     --color-border: #e8e8ec;
-
     /* =========================
      SPACING
   ========================= */
-
     --space-1: 4px;
     --space-2: 8px;
     --space-3: 12px;
@@ -101,45 +90,33 @@
     --space-16: 64px;
     --space-20: 80px;
     --space-24: 96px;
-
     /* =========================
      BORDER RADIUS
   ========================= */
-
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
     --radius-xl: 16px;
     --radius-2xl: 20px;
     --radius-round: 50%;
-
     /* =========================
      SHADOW
   ========================= */
-
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-
     --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.08);
-
     --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.1);
-
     --shadow-primary: 0 8px 25px rgba(162, 56, 255, 0.25);
-
     /* =========================
      CONTAINER
   ========================= */
-
     --container-width: 1100px;
     --container-padding: 24px;
-
     /* =========================
      BUTTON
   ========================= */
-
     --btn-height: 42px;
     --btn-padding-x: 24px;
     --btn-radius: 4px;
-
     /* =========================
      TRANSITION
   ========================= */
@@ -147,20 +124,62 @@
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
-
     /* =========================
      Z-INDEX
   ========================= */
-
     --z-header: 1000;
     --z-modal: 2000;
 }
 
-h1 {
-    font-family: var(--primary-font);
-    font-weight: var(--font-width-medium);
+.container{
+    padding: 0px 200px;
 }
 
-.container{
-    padding: 0 300 0 300;
+.navbar{
+    height: 99px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-black);
+    font-family: var(--font-primary);
+    font-weight: var(--fw-light);
+}
+
+.nav__menus{
+    font-family: var(--font-primary);
+    width: 722px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--color-text);
+    line-height: 24px;
+    font-size: var(--fs-base);
+}
+
+.nav__menus li{
+    padding: 12px 20px;
+    list-style-type: none;
+}
+
+.nav__menus > li > a{
+    text-decoration: none;
+    color: var(--color-bg);
+}
+
+.nav__menus > #btn{
+    border-radius: 4px;
+    background-color: var(--color-primary);
+}
+
+.nav__menus > #btn:hover{
+    background-color: var(--color-primary-dark);
 }
